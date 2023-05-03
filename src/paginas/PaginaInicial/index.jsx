@@ -1,7 +1,10 @@
-import Cabecalho from "../../components/Cabecalho";
-import Menu from "../../components/Menu";
 import banner from './banner.png'
 import styles from './PaginaInicial.module.scss'
+
+import Cabecalho from "components/Cabecalho";
+import Menu from "components/Menu";
+import Populares from "components/Populares";
+import Galeria from "Galeria";
 
 export default function PaginaInicial() {
     return (
@@ -15,6 +18,10 @@ export default function PaginaInicial() {
                         <img src={banner} alt="Banner" />
                     </div>
                 </section>
+                <div className={styles.galeria}>
+                    <Galeria />
+                    <Populares/>
+                </div>
             </main>
         </>
     )
