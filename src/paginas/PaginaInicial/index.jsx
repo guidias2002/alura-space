@@ -1,11 +1,21 @@
 import Cabecalho from "../../components/Cabecalho";
 import Menu from "../../components/Menu";
+import banner from './banner.png'
+import styles from './PaginaInicial.module.scss'
 
 export default function PaginaInicial() {
     return (
         <>
             <Cabecalho/>
-            <Menu/>
+            <main>
+                <section className={styles.principal}>
+                    <Menu/>
+                    <div className={styles.principal__imagem}>
+                        <h1>A galeira mais completa do espaço</h1>
+                        <img src={banner} alt="Banner" />
+                    </div>
+                </section>
+            </main>
         </>
     )
 }
