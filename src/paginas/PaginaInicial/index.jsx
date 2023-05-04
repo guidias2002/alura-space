@@ -4,7 +4,7 @@ import styles from './PaginaInicial.module.scss'
 import Cabecalho from "components/Cabecalho";
 import Menu from "components/Menu";
 import Populares from "components/Populares";
-import Galeria from "Galeria";
+import Galeria from "components/Galeria";
 
 export default function PaginaInicial() {
     return (
